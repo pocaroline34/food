@@ -37,8 +37,7 @@ def setup_generator(train_path, test_path, batch_size, dimentions):
     train_generator = train_datagen.flow_from_directory(
         directory= r"../food-101/images", # this is the target directory
         target_size=dimentions,
-        batch_size=batch_size
-        target_size= (150, 150),
+        batch_size=batch_size,
         color_mode = "rgb",
         class_mode = "categorical",
         shuffle = True,
@@ -48,8 +47,7 @@ def setup_generator(train_path, test_path, batch_size, dimentions):
     validation_generator = test_datagen.flow_from_directory(
         directory= r"../food-101/images", # this is the target directory
         target_size=dimentions,
-        batch_size=batch_size
-        target_size= (150, 150),
+        batch_size=batch_size,
         color_mode = "rgb",
         class_mode = "categorical",
         shuffle = True,
