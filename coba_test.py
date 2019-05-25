@@ -119,7 +119,7 @@ if __name__ == '__main__':
     parser.add_argument('-i', help='path to test image', dest='image_path',
                         type=str, default='')
     parser.add_argument('-e', help='epochs to train the model', dest='epochs',
-                        type=int, default=25)
+                        type=int, default=1000)
     parser.add_argument('-d', help='decimal value for dropout', dest='dropout',
                         type=float, default=0.2)
 
