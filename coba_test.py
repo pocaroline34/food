@@ -35,13 +35,13 @@ def setup_generator(train_path, test_path, batch_size, dimentions):
     test_datagen = ImageDataGenerator(rescale=1. / 255)
 
     train_generator = train_datagen.flow_from_directory(
-        train_path = r"food-101.tar/images",  # this is the target directory
+        train_path = r"../food-101/images",  # this is the target directory
         target_size=dimentions,
         batch_size=batch_size
         )
 
     validation_generator = test_datagen.flow_from_directory(
-        test_path = r"food-101.tar/images", # this is the target directory
+        test_path = r"../food-101/images", # this is the target directory
         target_size=dimentions,
         batch_size=batch_size
         )
